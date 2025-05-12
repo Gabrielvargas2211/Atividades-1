@@ -1,0 +1,10 @@
+# Programa para verificar se uma pessoa pode votar com base na idade
+
+# Solicita ao usuário que informe sua idade e converte para inteiro
+idade = int(input("Qual a sua idade? "))
+
+# Verifica se a idade é maior ou igual a 16
+if idade >= 16:
+    print("Você pode votar!")  # Se a idade for maior ou igual a 16, a pessoa pode votar
+else:
+    print("Você não pode votar!")  # Caso contrário, a pessoa não pode votar
