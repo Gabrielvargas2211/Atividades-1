@@ -1,0 +1,12 @@
+# Definimos o preço do produto (nesse caso, um celular)
+preco = 1000  # valor do produto em reais
+
+# Definimos o percentual de desconto a ser aplicado
+desconto = 15  # valor do desconto em porcentagem
+
+# Calculamos o valor final aplicando o desconto
+# A fórmula é: valor final = preço - (preço * desconto / 100)
+valor_final = preco - (preco * desconto / 100)
+
+# Exibimos o resultado usando f-string para formatar o valor com texto explicativo
+print(f"\nO preço do celular de Maria com {desconto}% de desconto é R${valor_final}")
