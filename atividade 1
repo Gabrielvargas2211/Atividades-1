@@ -1,0 +1,10 @@
+# Definimos a variável idade com o valor 15
+idade = 15
+
+# Verificamos se a idade é maior ou igual a 18
+if idade >= 18:
+    # Se a condição acima for verdadeira, executa este bloco
+    print("Maior de idade")
+else:
+    # Caso contrário (se a condição for falsa), executa este bloco
+    print("Menor de idade")
