@@ -1,0 +1,11 @@
+# Conversor de Temperatura de Celsius para Fahrenheit
+
+# Solicita ao usuário que informe a temperatura em graus Celsius
+celsius = float(input("Digite a temperatura em Celsius: "))
+
+# Converte a temperatura de Celsius para Fahrenheit usando a fórmula:
+# Fahrenheit = (Celsius * 9/5) + 32
+fahrenheit = (celsius * 9/5) + 32
+
+# Exibe o resultado formatado mostrando as duas temperaturas
+print(f"{celsius}ºC equivale a {fahrenheit}ºF")
