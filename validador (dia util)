@@ -1,0 +1,10 @@
+# Programa para verificar se o dia informado é útil ou fim de semana
+
+# Solicita ao usuário que digite o dia da semana e converte para minúsculo
+dia = input("Digite o dia da semana: ").lower()
+
+# Verifica se o dia é "sábado" ou "domingo", que são considerados fim de semana
+if dia == "sábado" or dia == "domingo":
+    print("É fim de semana! Uhuuuuu!")  # Se for sábado ou domingo, exibe mensagem de fim de semana
+else:
+    print("É dia útil")  # Caso contrário, é considerado um dia útil
