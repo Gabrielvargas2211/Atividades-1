@@ -1,0 +1,24 @@
+# Calculadora de IMC (Índice de Massa Corporal)
+# Fórmula: IMC = peso / (altura ** 2)
+
+# Solicita ao usuário a altura em metros (ex: 1.70)
+altura = float(input("Digite a sua altura em metros: "))
+
+# Solicita ao usuário o peso em quilogramas (ex: 70)
+peso = float(input("Digite seu peso em kg :"))
+
+# Calcula o IMC usando a fórmula
+imc = peso / (altura ** 2)
+
+# Exibe o IMC calculado, formatando para 2 casas decimais
+print(f"Seu IMC é {imc:.2f}")
+
+# Verifica a faixa de IMC e imprime a classificação correspondente
+if imc < 18.5:
+    print("Abaixo do peso")
+elif imc < 25:
+    print("Peso Normal")
+elif imc < 30:
+    print("Sobrepeso")
+else:
+    print("Acima do Peso")
