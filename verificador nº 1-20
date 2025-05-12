@@ -1,0 +1,10 @@
+# Programa para verificar se um número está entre 10 e 20
+
+# Solicita ao usuário que digite um número e converte para inteiro
+numero = int(input("Digite seu número :"))
+
+# Verifica se o número está entre 10 e 20 (exclusivo)
+if numero > 10 and numero < 20:  # Verifica se o número é maior que 10 e menor que 20
+    print("O número está entre 10 e 20")  # Se a condição for verdadeira, exibe esta mensagem
+else:
+    print("O número está fora do intervalo")  # Se a condição não for verdadeira, exibe esta mensagem
