@@ -1,0 +1,44 @@
+# Calculadora com tratamento de exceções (entrada do usuário e operações)
+
+while True:  # Loop que vai continuar até que uma operação válida seja realizada
+    try:
+        # Solicita ao usuário o primeiro número e converte para float
+        num1 = float(input("Digite o primeiro número: "))
+
+        # Solicita ao usuário o segundo número e converte para float
+        num2 = float(input("Digite o segundo número :"))
+    
+        # Solicita ao usuário qual operação matemática ele deseja realizar
+        operacao = input("Digite a operação (+ , - , * , / ): ")
+
+        # Verifica qual operação foi escolhida e realiza o cálculo correspondente
+        if operacao == "+":
+            resultado = num1 + num2
+        elif operacao == "-":
+            resultado = num1 - num2
+        elif operacao == "*":
+            resultado = num1 * num2
+        elif operacao == "/":
+            if num2 == 0:  # Verifica se o denominador é zero
+                # Levanta uma exceção personalizada para evitar divisão por zero
+                raise ZeroDivisionError("Coleguinha, você não pode dividir por zero.")
+            resultado = num1 / num2
+        else:
+            # Levanta uma exceção caso a operação não seja reconhecida
+            raise ValueError("Operação Inválida")
+        
+        # Exibe o resultado da operação
+        print(f"Resultado: {resultado}")
+
+        # Sai do loop se a operação for bem-sucedida
+        break
+
+    # Captura erro de valor inválido (como quando o usuário não digita um número)
+    except ValueError as e:
+
+        if str(e) == "Operação Inválida":
+            # Mensagem de erro caso o usuário digite uma operação inválida
+            print(e)
+        else:
+            # Mensagem de erro caso o usuário insira algo que não seja um número
+            print("Entrada Inválida,
