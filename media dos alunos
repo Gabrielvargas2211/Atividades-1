@@ -1,0 +1,33 @@
+# Programa para registrar as notas dos alunos e calcular a média
+
+# Lista para armazenar as notas
+notas = []
+
+# Variável para contar o número de alunos
+numero_de_alunos = 0
+
+while True:
+    # Solicita a nota do aluno ou o comando 'fim' para encerrar
+    entrada = input("Digite a nota do aluno (ou escreva 'fim' para encerrar): ")
+
+    # Verifica se o usuário quer encerrar a entrada de dados
+    if entrada.lower() == 'fim':
+        break
+
+    try:
+        # Converte a entrada para um número decimal (float)
+        nota = float(entrada)
+
+        # Verifica se a nota está no intervalo válido de 0 a 10
+        if 0 <= nota <= 10:
+            # Adiciona a nota à lista de notas
+            notas.append(nota)
+            # Incrementa o contador de alunos
+            numero_de_alunos += 1
+        else:
+            # Informa ao usuário que a nota está fora do intervalo válido
+            print("Nota inválida, Digite um valor de 0 a 10!")
+    
+    except ValueError:
+        # Informa ao usuário que a entrada não foi um número válido
+        print("Entrada inválida. Por favor, escre
